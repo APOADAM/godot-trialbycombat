@@ -1,0 +1,15 @@
+ItemList
+CharacterBody2D
+AnimatedSprite2D
+CollisionShape2D
+hurtbox
+Node2D
+Area2D
+Node
+HITBOX
+Sprite2D
+Timer
+ProgressBar
+CollisionPolygon2D
+TileMapLayer
+StaticBody2D

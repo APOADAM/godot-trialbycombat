@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=3 uid="uid://4kflwq7vyvwq"]
+
+[ext_resource type="Texture2D" uid="uid://cewpsb72eriii" path="res://sprites/trial by combat images/Water.png" id="1_wa1yx"]
+[ext_resource type="Script" path="res://river.gd" id="1_wrr7f"]
+[ext_resource type="Script" path="res://scripts/HITBOX.gd" id="3_ictr4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n4qb"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8c2tl"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qb1a2"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(32, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkj6i"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(48, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_66cm8"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(64, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_helrs"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(80, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rxc5q"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(96, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1lb77"]
+atlas = ExtResource("1_wa1yx")
+region = Rect2(112, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vugwm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n4qb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8c2tl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qb1a2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkj6i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_66cm8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_helrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rxc5q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1lb77")
+}],
+"loop": true,
+"name": &"flow",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ttrkw"]
+height = 290.0
+
+[node name="River" type="Node2D"]
+script = ExtResource("1_wrr7f")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -71)
+scale = Vector2(2.8125, 14.3164)
+sprite_frames = SubResource("SpriteFrames_vugwm")
+animation = &"flow"
+frame_progress = 0.0729696
+
+[node name="HITBOX" type="Area2D" parent="."]
+script = ExtResource("3_ictr4")
+
+[node name="River" type="CollisionShape2D" parent="HITBOX"]
+position = Vector2(2, -1)
+shape = SubResource("CapsuleShape2D_ttrkw")
+
+[connection signal="body_entered" from="HITBOX" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="HITBOX" to="." method="_on_hitbox_body_exited"]

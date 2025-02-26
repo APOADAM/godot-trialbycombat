@@ -1,0 +1,87 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1740604335
+baldie.gd::GDScript::-1::1740602288::0::1::::<>CharacterBody2D<>::
+baldie.tscn::PackedScene::3917014589517562579::1740603655::0::1::::<><>::res://baldie.gd<>uid://bvv6bpv5aayx3::::res://sprites/Unarmed_Idle_full.png<>uid://dnew3516qroho::::res://sprites/Sword_Run_Attack_full.png<>uid://bxoay2wjcurd2::::res://sprites/Unarmed_Hurt_full.png<>uid://boeu7ejb8ybl8::::res://sprites/Unarmed_Run_full.png<>uid://bbhn6brqiu3yx::::res://sprites/Unarmed_Death_full.png<>uid://ji1vpss0l5t6::::res://healthbar.tscn<>res://scripts/HITBOX.gd<>res://scripts/hurtbox.gd<>uid://bt5mqt8iapeom::::res://Splash.png<>uid://dutx1gl7onksp::::res://sprites/trial by combat images/slashround/slash3_00001.png<>uid://csrsh4dm553ee::::res://sprites/trial by combat images/slashround/slash3_00002.png<>uid://b64553wldaprb::::res://sprites/trial by combat images/slashround/slash3_00003.png<>uid://wnkhupvxln7v::::res://sprites/trial by combat images/slashround/slash3_00004.png<>uid://7jbs4283h1wt::::res://sprites/trial by combat images/slashround/slash3_00005.png<>uid://ckfulrkpj4a3y::::res://sprites/trial by combat images/slashround/slash3_00006.png<>uid://hvtvaicpwai1::::res://sprites/trial by combat images/slashround/slash3_00007.png<>uid://bdya46o5nt0ts::::res://sprites/trial by combat images/slashround/slash3_00008.png<>uid://dvkgu8trgllw2::::res://sprites/trial by combat images/slashround/slash3_00009.png<>uid://b2bmc58jbpmse::::res://sprites/trial by combat images/slashround/slash3_00010.png<>uid://bw41lcmos6v4t::::res://sprites/trial by combat images/slashround/slash3_00011.png<>uid://b22nud2t8cm13::::res://sprites/trial by combat images/slashround/slash3_00012.png
+campfire.gd::GDScript::-1::1740443630::0::1::::<>Node2D<>::
+campfire.tscn::PackedScene::2951418323486290688::1740597099::0::1::::<><>::res://campfire.gd<>uid://dk2nsie22l2ms::::res://sprites/trial by combat images/campfire.png<>res://scripts/HITBOX.gd
+dummy.gd::GDScript::-1::1740599302::0::1::::<>CharacterBody2D<>::
+dummy.tscn::PackedScene::902313326615765586::1740603655::0::1::::<><>::res://dummy.gd<>uid://ji1vpss0l5t6::::res://healthbar.tscn<>uid://cw0rcctnfxvea::::res://sprites/trial by combat images/combat_dummy/BODY_animation.png<>res://scripts/hurtbox.gd
+healthbar.gd::GDScript::-1::1740601876::0::1::::<>ProgressBar<>::
+healthbar.tscn::PackedScene::649831574767145925::1740603655::0::1::::<><>::res://healthbar.gd
+icon.svg::CompressedTexture2D::8549498727558199089::1737919443::1740443628::1::::<><>::
+playerattempt_2.tscn::PackedScene::-1::1740169288::0::1::::<><>::
+playground.tscn::PackedScene::7946884600997224450::1740603655::0::1::::<><>::uid://bv2owmwjt8u6n::::res://baldie.tscn<>uid://htxuuue0txxk::::res://sprites/trial by combat images/Block_B_02.png<>uid://tu61n6alg1r2::::res://sprites/trial by combat images/Well.png<>uid://25y1suiot7lm::::res://sprites/trial by combat images/Block_C_01.png<>uid://cklwk6id7c61b::::res://sprites/trial by combat images/Ground_Tile_02_B.png<>uid://26i0mnuyyci2::::res://sprites/trial by combat images/Tree_06.png<>uid://5vrheyx4euqi::::res://sprites/trial by combat images/fence.png<>uid://bu3fr8cnkpxiv::::res://sprites/trial by combat images/Rock_02.png<>uid://cdfol6vgdms8e::::res://sprites/trial by combat images/Blue-gray_ruins3.png<>uid://4kflwq7vyvwq::::res://river.tscn<>uid://m48vp6pre36e::::res://vase.tscn<>uid://bibxoto6fmgrw::::res://campfire.tscn<>uid://m4c761g4055g::::res://dummy.tscn
+river.gd::GDScript::-1::1740581718::0::1::::<>Node2D<>::
+river.tscn::PackedScene::2056444653453861856::1740597099::0::1::::<><>::uid://cewpsb72eriii::::res://sprites/trial by combat images/Water.png<>res://river.gd<>res://scripts/HITBOX.gd
+skillshots.tscn::PackedScene::4636198094618083551::1740603655::0::1::::<><>::
+Splash.png::CompressedTexture2D::3782698271339462064::1740443025::1740443628::1::::<><>::
+vase.gd::GDScript::-1::1740443630::0::1::::Vase<>Node2D<>::
+vase.tscn::PackedScene::904175077401047010::1740597099::0::1::::<><>::res://vase.gd<>uid://dy2l2ebktlkth::::res://sprites/trial by combat images/BlueCoin Sheet.png<>uid://dtngjvpprkxjt::::res://sprites/trial by combat images/Vase Shine Anim.png<>res://scripts/hurtbox.gd
+::res://music/::1739993563
+::res://player/::1740443630
+player_1.gd::GDScript::-1::1740443630::0::1::::<>CharacterBody2D<>::
+player_1.tscn::PackedScene::7023724377103419266::1740165823::0::1::::<><>::uid://bvv6bpv5aayx3::::res://sprites/Unarmed_Idle_full.png<>res://player/player_1.gd<>uid://boeu7ejb8ybl8::::res://sprites/Unarmed_Run_full.png
+::res://player/scripts/::1740155809
+::res://scripts/::1740581718
+HITBOX.gd::GDScript::-1::1740581718::0::1::::HITBOX<>Area2D<>::
+hurtbox.gd::GDScript::-1::1740581645::0::1::::hurtbox<>Area2D<>::
+state_machine.gd::GDScript::-1::1740443630::0::1::::<>Node<>::
+::res://sprites/::1740597239
+map.png::CompressedTexture2D::3369706466448288196::1737917998::1740443628::1::::<><>::
+Sword_attack_full.png::CompressedTexture2D::5651423776063467113::1720600553::1740443628::1::::<><>::
+Sword_Run_Attack_full.png::CompressedTexture2D::8081361922756145820::1720600635::1740443628::1::::<><>::
+Sword_Walk_full.png::CompressedTexture2D::4254296728538983434::1720600650::1740443628::1::::<><>::
+Unarmed_Death_full.png::CompressedTexture2D::2471904931650069655::1740418231::1740443628::1::::<><>::
+Unarmed_Hurt_full.png::CompressedTexture2D::4029709687506948645::1720600693::1740443628::1::::<><>::
+Unarmed_Idle_full.png::CompressedTexture2D::3905623167150937866::1720600708::1740443628::1::::<><>::
+Unarmed_Run_full.png::CompressedTexture2D::3378593714989199179::1739893647::1740443628::1::::<><>::
+::res://sprites/trial by combat images/::1740597239
+Block_A_01.png::CompressedTexture2D::210000617802600413::1739995350::1740443628::1::::<><>::
+Block_A_02.png::CompressedTexture2D::6371700431183658835::1739995359::1740443628::1::::<><>::
+Block_B_01.png::CompressedTexture2D::1385367400395857965::1739995362::1740443628::1::::<><>::
+Block_B_02.png::CompressedTexture2D::531978371084104476::1739995365::1740443628::1::::<><>::
+Block_C_01.png::CompressedTexture2D::1958534726015957242::1739995368::1740443628::1::::<><>::
+Block_C_02.png::CompressedTexture2D::3655430821139713704::1739995371::1740443628::1::::<><>::
+Blue-gray_ruins3.png::CompressedTexture2D::4994601129644144830::1740187029::1740443628::1::::<><>::
+BlueCoin Sheet.png::CompressedTexture2D::8900248813225951805::1740272645::1740443628::1::::<><>::
+Brown_ruins1.png::CompressedTexture2D::2872647858188160835::1740186622::1740443628::1::::<><>::
+Cactus_02.png::CompressedTexture2D::942542868512134874::1739995458::1740443628::1::::<><>::
+campfire.png::CompressedTexture2D::7917710579644813438::1740183245::1740443628::1::::<><>::
+fence.png::CompressedTexture2D::2150062179663246920::1740183366::1740443628::1::::<><>::
+Ground_Tile_02_B.png::CompressedTexture2D::5498793231602568801::1739995565::1740443628::1::::<><>::
+Ground_Tile_02_C.png::CompressedTexture2D::4539149776918202830::1739995551::1740443628::1::::<><>::
+Rock_02.png::CompressedTexture2D::3848335813992441913::1739995479::1740443628::1::::<><>::
+Stump.png::CompressedTexture2D::3141503590816814218::1739995470::1740443628::1::::<><>::
+Tree_03.png::CompressedTexture2D::4034004342722500285::1739995494::1740443628::1::::<><>::
+Tree_05.png::CompressedTexture2D::4653798652779032860::1739995501::1740443628::1::::<><>::
+Tree_06.png::CompressedTexture2D::1959625520696867123::1739995516::1740443628::1::::<><>::
+Vase Shine Anim.png::CompressedTexture2D::8520068491973526689::1740186517::1740443628::1::::<><>::
+Water.png::CompressedTexture2D::5099956054899302752::1740186491::1740443628::1::::<><>::
+Well.png::CompressedTexture2D::1376804972328553445::1739995525::1740443628::1::::<><>::
+::res://sprites/trial by combat images/combat_dummy/::1740597239
+BODY_animation.png::CompressedTexture2D::6369641266735503428::1740597230::1740597239::1::::<><>::
+::res://sprites/trial by combat images/slash01/::1740585617
+slash5-animation_00.png::CompressedTexture2D::3752295116294090250::1740584951::1740585617::1::::<><>::
+slash5-animation_01.png::CompressedTexture2D::4008833811892770815::1740584951::1740585617::1::::<><>::
+slash5-animation_02.png::CompressedTexture2D::701055265499736881::1740584951::1740585617::1::::<><>::
+slash5-animation_03.png::CompressedTexture2D::2468702293705934134::1740584951::1740585617::1::::<><>::
+slash5-animation_04.png::CompressedTexture2D::488847836076189729::1740584951::1740585617::1::::<><>::
+slash5-animation_05.png::CompressedTexture2D::5079769372119209167::1740584951::1740585617::1::::<><>::
+slash5-animation_06.png::CompressedTexture2D::4011355143182095347::1740584951::1740585617::1::::<><>::
+slash5-animation_07.png::CompressedTexture2D::4178377980675278220::1740584951::1740585617::1::::<><>::
+slash5-animation_08.png::CompressedTexture2D::8259011776612914317::1740584951::1740585617::1::::<><>::
+slash5-animation_09.png::CompressedTexture2D::8557460990356458685::1740584951::1740585617::1::::<><>::
+slash5-animation_10.png::CompressedTexture2D::2845613980573662021::1740584951::1740585617::1::::<><>::
+::res://sprites/trial by combat images/slashround/::1740585636
+slash3_00001.png::CompressedTexture2D::8603705356248357411::1740585629::1740585636::1::::<><>::
+slash3_00002.png::CompressedTexture2D::6072441909515026060::1740585629::1740585636::1::::<><>::
+slash3_00003.png::CompressedTexture2D::4624018380083297039::1740585629::1740585636::1::::<><>::
+slash3_00004.png::CompressedTexture2D::1571612215948885681::1740585629::1740585636::1::::<><>::
+slash3_00005.png::CompressedTexture2D::2264716823910594623::1740585629::1740585636::1::::<><>::
+slash3_00006.png::CompressedTexture2D::5486286585164803752::1740585629::1740585636::1::::<><>::
+slash3_00007.png::CompressedTexture2D::535864975306263818::1740585629::1740585636::1::::<><>::
+slash3_00008.png::CompressedTexture2D::2646585719960202532::1740585629::1740585636::1::::<><>::
+slash3_00009.png::CompressedTexture2D::8654273326255982411::1740585629::1740585636::1::::<><>::
+slash3_00010.png::CompressedTexture2D::4284317642264951808::1740585629::1740585636::1::::<><>::
+slash3_00011.png::CompressedTexture2D::3992040608388175897::1740585629::1740585636::1::::<><>::
+slash3_00012.png::CompressedTexture2D::4338082898250886528::1740585629::1740585636::1::::<><>::

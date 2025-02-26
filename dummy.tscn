@@ -1,0 +1,100 @@
+[gd_scene load_steps=16 format=3 uid="uid://m4c761g4055g"]
+
+[ext_resource type="Script" path="res://dummy.gd" id="1_4vlgu"]
+[ext_resource type="PackedScene" uid="uid://ji1vpss0l5t6" path="res://healthbar.tscn" id="2_axjb7"]
+[ext_resource type="Texture2D" uid="uid://cw0rcctnfxvea" path="res://sprites/trial by combat images/combat_dummy/BODY_animation.png" id="4_8pihh"]
+[ext_resource type="Script" path="res://scripts/hurtbox.gd" id="5_klbur"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uleam"]
+radius = 15.0333
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_n5g5l"]
+radius = 15.0333
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i38gb"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ijedq"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2x5v"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_11nxq"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3ii2"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kumb"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kaydd"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q7mwo"]
+atlas = ExtResource("4_8pihh")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vgrds"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i38gb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ijedq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2x5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_11nxq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3ii2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kumb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kaydd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q7mwo")
+}],
+"loop": true,
+"name": &"dummy",
+"speed": 8.0
+}]
+
+[node name="Dummy" type="CharacterBody2D"]
+script = ExtResource("1_4vlgu")
+
+[node name="Healthbar" parent="." instance=ExtResource("2_axjb7")]
+offset_left = -29.0
+offset_top = -48.0
+offset_right = 26.0
+offset_bottom = -34.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uleam")
+
+[node name="hurtbox" type="Area2D" parent="."]
+script = ExtResource("5_klbur")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox"]
+shape = SubResource("CircleShape2D_n5g5l")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -2)
+scale = Vector2(0.546875, 0.546875)
+sprite_frames = SubResource("SpriteFrames_vgrds")
+animation = &"dummy"
